@@ -1,0 +1,108 @@
+body {
+  background-image: url('pantalla.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+button{
+    background-color: #0a0101; 
+    border: 1px solid rgb(101, 176, 247);
+  }
+  
+* {
+  box-sizing: border-box;
+  color: rgb(251, 255, 0);
+}
+.main-container {
+  max-width: 800px;
+  margin: auto;
+}
+h1.titulo {
+  margin: 48px auto 295px auto;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  color: rgb(255, 5, 5);
+}
+h1#msg-final {
+  text-align: center;
+  font-size: 25px;
+  color: rgb(0, 0, 255);
+  transition: all .5s ease;
+  transform: scale(0);
+  min-height: 50px;
+  margin-bottom: 0;
+}
+.zoom-in {
+  transform: scale(1) !important;
+}
+#acierto {
+  text-align: center;
+  min-height: 24px;
+  transform: scale(0);
+}
+.acierto {
+  animation: zoomInOut 1s ease;
+}
+.rojo {
+  color: red;
+}
+.verde {
+  color: rgb(0, 255, 0);
+}
+@keyframes zoomInOut {
+  0% { transform: scale(0); }
+  50% { transform: scale(1); }
+  70% { transform: scale(1); }
+  100% { transform: scale(0); }
+}
+h2.palabra {
+  margin: 0 auto 25px auto;
+  text-align: center;
+  color: rgb(234, 255, 0);
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+.flex-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px auto; 
+}
+.no-wrap {
+  flex-wrap: nowrap !important;
+}
+.col {
+  width: 50%;
+  text-align: center;
+}
+
+#turnos h3 {
+  margin: auto;
+}
+h3 span {
+   color: rgb(234, 255, 0);
+}
+.letra:disabled {
+  color:rgba(255, 0, 0, 0.5);
+}
+picture {
+  position: relative;
+}
+/*Sirve para ajustar el tamaño de la imagen'*/
+picture img {
+  position: absolute;
+  top: -203px;
+  left: -300px;
+  height: 250px;
+}
+#image5, #image4, #image3,
+#image2, #image1, #image0 {
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.fade-in {
+  opacity: 1 !important;
+}
+.encuadre {
+  border: 2px dashed rgb(255, 0, 0);
+  padding: 3px 2px 2px 6px;
+}
